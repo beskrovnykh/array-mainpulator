@@ -63,7 +63,7 @@ public class ParallelArrayManipulator {
         return maxSumParallel(series);
     }
 
-    private static final File file = new File("inputs/input00.txt");    
+    private static final File file = new File("inputs/input09.txt");    
 
     public static void main(String[] args) throws IOException {
 
