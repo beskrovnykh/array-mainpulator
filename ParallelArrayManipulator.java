@@ -31,25 +31,9 @@ public class ParallelArrayManipulator {
         }
     }
 
-    /*
-     * Computes max partial sum of the series 
-     */ 
-    public static long maxSum(long[] series) {
-        long max = 0;        
-        long sum = 0;
-        for (int i = 0; i < series.length; i++) {
-            sum += series[i];
-            if (sum > max) {
-                max = sum;
-            }
-        }
-        return max;
-    }
+    private static final int numThreads = 4;
 
-    private final static int numThreads = 4;
-
-    private final static ExecutorService executor = Executors.newFixedThreadPool(numThreads);
-
+    private static final ExecutorService executor = Executors.newFixedThreadPool(numThreads);
 
     public static long maxSumParallel(long[] series) {
         long[] max = new long[numThreads+1], sum = new long[numThreads+1];
