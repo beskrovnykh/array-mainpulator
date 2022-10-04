@@ -5,7 +5,6 @@
 Вычисления проводил на ноутбуке Quad-Core Intel Core i7 1,2 GHz, 4 Core
 
 1) Лобовое решение + вывод в консоль ~38 мин
-
 ```
 Total execution time: 2297586 ms
 Result: 2147483646
@@ -45,7 +44,7 @@ Result: 2501448788
 javac ParallelArrayManipulator.java && java ParallelArrayManipulator
 ```
 ```
-Total execution time: 72 ms
+Total execution time: 120 ms
 Result: 2501448788
 [Finished in 1.03s]
 ```
